@@ -7,28 +7,28 @@
 
 // If the numbers array is empty, then both max and min should return null or undefined, whichever is more convenient.
 
-// max(1,2,3,4,5,6,7,8);
-// min(1,2,3,4,5,6,7,8);
+max(1,2,3,4,5,6,7,8);
+min(1,2,3,4,5,6,7,8);
 
-// function max(...numbers) {
-//     let currentMax = numbers[0];
-//     let i = 0;
-//     while (i < numbers.length) {
-//         if (numbers[i] > currentMax) {
-//             currentMax = numbers[i];
-//         } i++;
-//     } console.log(currentMax);
-// }
+function max(...numbers) {
+    let currentMax = numbers[0];
+    let i = 0;
+    while (i < numbers.length) {
+        if (numbers[i] > currentMax) {
+            currentMax = numbers[i];
+        } i++;
+    } console.log(currentMax);
+}
 
-// function min(...numbers) {
-//     let currentMin = numbers[0];
-//     let i = 0;
-//     while (i < numbers.length) {
-//         if (numbers[i] < currentMin) {
-//             currentMin = numbers[i];
-//         } i++;
-//     } console.log(currentMin);
-// }
+function min(...numbers) {
+    let currentMin = numbers[0];
+    let i = 0;
+    while (i < numbers.length) {
+        if (numbers[i] < currentMin) {
+            currentMin = numbers[i];
+        } i++;
+    } console.log(currentMin);
+}
 
 // Redo "Compute the average" exercise but use the Array.forEach() method instead of a for loop
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
