@@ -15,9 +15,13 @@
  
 
 function filter(arr,fn) {
-    
-    newArray = [];
-
+    let newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+    if (fn(arr[i])) {
+        newArray.push(arr[i]);
+    }
+};
+    return newArray;
     // TASK: Define your function here
     
 
